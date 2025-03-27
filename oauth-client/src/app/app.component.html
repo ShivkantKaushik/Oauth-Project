@@ -1,5 +1,11 @@
 
+<p-toast />
+<div *ngIf="isAuthenticated">
 
-<div class="card flex justify-center">
-  <p-button label="Check" />
+  <ul *ngFor="let product of productList">
+    <li>{{product}}</li>
+  </ul>
+
+  <p-button (click)="doLogOut()"> Logout </p-button>
+
 </div>

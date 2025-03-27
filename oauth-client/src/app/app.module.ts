@@ -8,6 +8,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import { ButtonModule } from 'primeng/button';
+import { Toast } from 'primeng/toast';
+import { Ripple } from 'primeng/ripple';
+
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +21,10 @@ import { ButtonModule } from 'primeng/button';
   imports: [
     BrowserModule,
     ButtonModule,
-    AppRoutingModule
+    Toast,
+    Ripple,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync(),

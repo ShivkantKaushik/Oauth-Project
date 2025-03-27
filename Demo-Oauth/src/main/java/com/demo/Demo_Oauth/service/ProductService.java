@@ -21,6 +21,10 @@ public class ProductService {
                 .description("This is Product1")
                 .price(10.0)
                 .build());
+        products.add( ProductDTO.builder().name("Product2").productId("abc1svfevd2")
+                .description("This is Product2")
+                .price(11.0)
+                .build());
     }
 
 
